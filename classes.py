@@ -1,4 +1,7 @@
 class Television:
+    """
+    Class to make TV objects
+    """
     MIN_CHANNEL = 0     # Minimum TV channel
     MAX_CHANNEL = 3     # Maximum TV channel
 
@@ -7,11 +10,11 @@ class Television:
 
     def __init__(self) -> None:
         """
-        Function that initializes the TV object
+        Function that initializes the TV object and its status
         """
-        self.__channel = Television.MIN_CHANNEL
-        self.__volume = Television.MIN_VOLUME
-        self.__tv = False
+        self.__channel: int = Television.MIN_CHANNEL
+        self.__volume: int = Television.MIN_VOLUME
+        self.__tv: bool = False
 
     def power(self) -> None:
         """
